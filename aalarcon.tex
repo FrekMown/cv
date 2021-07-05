@@ -1,0 +1,153 @@
+\documentclass[9pt,a4paper]{altacv}%
+\usepackage[hidelinks]{hyperref}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=2cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+% \addbibresource{sample.bib}
+
+\begin{document}
+\name{Alfredo Alarcon Y.}
+\tagline{Scientific Informatics}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{3.3cm}{profile.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{a.alarcon.y@gmail.com}
+  \phone{+33 6 86 16 56 09}
+  %  \mailaddress{Address, Street, 00000 County}
+  \location{Grenoble, France}
+  \printinfo{Age}{34 years old}
+  \printinfo{Nationality}{Chilean / French}
+  %  \homepage{alfredoalarcon.com}
+  %  \twitter{@marissamayer}
+  %  \linkedin{linkedin.com/in/ronak-dedhiya}
+  %  \github{github.com/ronakdedhiya} % I'm just making this up though.
+  %   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+  \makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+
+\cvsection[page1sidebar]{DESCRIPTION}
+
+\small{Scientific Engineer \textbf{with 8-year experience in Data Science and  Web Development}. Interested in innovation, multidisciplinarity and continuous learning.
+Please visit my website for more information about my professional background - \textbf{\href{http://alfredoalarcon.com}{http://alfredoalarcon.com}}.
+
+\cvsection{Experience}
+
+\cvevent{Bioinformatics Team Leader}{\href{https://www.global-bioenergies.com/?lang=en}{Global Bioenergies}}{Feb 2017 -- Sept 2019}{Paris region, France}
+\begin{itemize}
+  \item I built a new activity in bioinformatics, data science and web development in a \textbf{biotechnology company}.
+  \item Development and deployment of a whole web application useful for processing, analysis and visualization of most scientific data of the company.
+  \item Modelling and analysis of \textbf{genomics and transcriptomics data} led to the discovery of new genes and metabolic pathways. Three patents being written at the moment.
+  \item Management and training of one collaborator.
+  \item Dissemination of data analysis and web development among biologist colleagues.
+  \item Tools based on python, javascript (React), SQL (postgres) and devops, as well as specialised bioinformatics software (clustalo, rdkit, biopython, blast, hmmer...).
+\end{itemize}
+
+\divider
+
+\cvevent{Transportation Data Analyst}{\href{https://www.systra.com/en/}{Systra}}{ Jan 2013 -- July 2016 }{Marseille, France }
+\begin{itemize}
+  \item Public policies analysis applied to \textbf{public transportation planning}.
+  \item Analysis of geographical, transportation and poll data in order to forecast demand for a public transportation system in a regional or national context (\textit{Transportation networks analysis}).
+  \item Data mining and forecast using python, excel and VBA, as well as specialised transportation software.
+\end{itemize}
+
+\divider
+
+
+\vspace{1.5em}
+
+\cvsection{Education}
+\cvevent{Engineer - \small{\textit{Ing\'enieur de l'Ecole Polytechnique}}}
+  {\href{https://www.polytechnique.edu/en}{Ecole Polytechnique} (X2008)}
+  {December 2012}
+  {Palaiseau, France}
+\vspace{0.5em}
+
+\cvevent{MSc Biotechnology - \small{\textit{Systems and Synthetic Biology}}}
+  {\href{https://www.universite-paris-saclay.fr/en}{Universit\'e Paris-Saclay}}
+  {January 2016}
+  {Evry, France}
+\vspace{0.5em}
+
+\cvevent{MSc Economics and Public Policies}{\href{https://www.sciencespo.fr/en}{Sciences Po} - \href{https://www.polytechnique.edu/en}{Ecole Polytechnique}}{December 2012}{Paris, France}
+%\divider
+
+% \divider
+
+
+
+
+
+
+\clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+\nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+% %% If the NEXT page doesn't start with a \cvsection but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}

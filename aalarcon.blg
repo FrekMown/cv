@@ -1,0 +1,5 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'aalarcon.blg'
+[27] biber:313> INFO - === sam. févr. 22, 2020, 13:07:22
+[48] Biber.pm:371> INFO - Reading 'aalarcon.bcf'
+[96] Utils.pm:169> WARN - No data sources defined!
